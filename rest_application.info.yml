@@ -1,0 +1,11 @@
+name: 'Rest Application'
+type: module
+description: 'The application stores simple articles.'
+package: Custom
+core_version_requirement: ^8 || ^9
+dependencies:
+  - drupal:rest
+  - drupal:basic_auth
+  - drupal:hal
+  - drupal:user
+  - drupal:node

@@ -1,0 +1,38 @@
+uuid: 66807eab-8bf5-4a89-802e-2cf1ac476cc3
+langcode: en
+status: true
+dependencies:
+  module:
+    - basic_auth
+    - hal
+    - rest_application
+    - serialization
+    - user
+id: article_resource
+plugin_id: article_resource
+granularity: method
+configuration:
+  GET:
+    supported_formats:
+      - hal_json
+      - json
+    supported_auth:
+      - cookie
+  POST:
+    supported_formats:
+      - hal_json
+      - json
+    supported_auth:
+      - basic_auth
+  DELETE:
+    supported_formats:
+      - hal_json
+      - json
+    supported_auth:
+      - basic_auth
+  PATCH:
+    supported_formats:
+      - hal_json
+      - json
+    supported_auth:
+      - basic_auth
